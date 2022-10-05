@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Speech synthesis de HTMl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="container">
+            <h3 class="titulo">Sintesis de voz en atributos HTML</h3>
+            <p>
+                De acuerdo a las siguientes clases:
+                <ul>
+                    <li>.lecturaAudioInnerText</li>
+                    <li>.lecturaAudioTitle</li>
+                    <li>.lecturaAudioAriaLabel</li>
+                </ul>
+                Cada elemento HTML que las contenga será leido por javascript al momento de
+                presionar "Activar voz" y hara posible la lectura a partir del motor de sistentesis
+                de voz disponible, este puede ser online u offline de acuerdo al navegador que el
+                usuario tenga instalado y tenga disponible.
+            </p>
+            <button class="activarVoz">Activar voz</button>
+            <button class="desactivarVoz">Desactivar voz</button>
+            <br><br>
+            <span>Status de spech: <b id="status">Desactivado</b></span>
+            <hr>
+            <b>.lecturaAudioInnerText</b>
+            <br><br>
+            <span class="lecturaAudioInnerText">Saludo</span>
+            <br><br><br>
+            <b>.lecturaAudioTitle</b>
+            <br>
+            <label title="Tengo un atributo llamado title que esta siendo leido" class="lecturaAudioTitle">
+                Lectura de voz en el atributo title
+            </label>
+            <br><br><br>
+            <b>.lecturaAudioAriaLabel</b>
+            <br><br>
+            <button aria-label="Hola" class="lecturaAudioAriaLabel">Dire Hola al pasar el mouse</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
